@@ -1,0 +1,16 @@
+:root {
+    --standard-shadow: 5px 5px 0  rgba(76,40,187,0.4), 10px 10px 0  rgba(76,40,187,0.3), 15px 15px 0  rgba(76,40,187,0.2), 20px 20px 0  rgba(76,40,187,0.1), 25px 25px 0  rgba(76,40,187,0.05),inset 0 0 0  #8545ec, 5px 5px 0  rgba(76,40,187,0.4), 10px 10px 0  rgba(76,40,187,0.3), 15px 15px 0  rgba(76,40,187,0.2), 20px 20px 0  rgba(76,40,187,0.1), 25px 25px 0  rgba(76,40,187,0.05), 25px 25px 0  rgba(76,40,187,0.05),inset 0 0 0  #8545ec,inset 5px 5px 0  rgba(76,40,187,0.4);
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+p {
+    padding: 5% 10%;
+    box-shadow: var(--standard-shadow);
+    border-radius: 20% 100% 20% 100% / 100% 0% 100% 0% ;
+    color: white;
+    background-color: darkslategray;
+}
