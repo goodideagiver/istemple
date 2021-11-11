@@ -54,8 +54,8 @@ main {
 }
 
 body {
-    background: rgb(69,170,180);
-    background: linear-gradient(45deg, rgba(69,170,180,1) 0%, rgba(69,170,180,1) 16%, rgba(3,141,178,1) 16%, rgba(3,141,178,1) 33%, rgba(32,100,145,1) 33%, rgba(32,100,145,1) 49%, rgba(249,99,124,1) 49%, rgba(249,99,124,1) 65%, rgba(254,122,102,1) 65%, rgba(254,122,102,1) 81%, rgba(251,180,92,1) 81%); 
+    /* background: rgb(69,170,180);
+    background: linear-gradient(45deg, rgba(69,170,180,1) 0%, rgba(69,170,180,1) 16%, rgba(3,141,178,1) 16%, rgba(3,141,178,1) 33%, rgba(32,100,145,1) 33%, rgba(32,100,145,1) 49%, rgba(249,99,124,1) 49%, rgba(249,99,124,1) 65%, rgba(254,122,102,1) 65%, rgba(254,122,102,1) 81%, rgba(251,180,92,1) 81%);  */
 
     background-size: 300%;
     animation: bg-scroll 5s;
@@ -205,13 +205,18 @@ body {
 
 #offer ol {
     margin: auto;
-    width: fit-content;
     margin-bottom: 5%;
+    width: fit-content;
 }
 
 #offer li,#offer h3 {
     margin: auto;
     width: fit-content;
+}
+
+#offer li {
+    text-align: left;
+    width: 100%;
 }
 
 .mobile-buttons > a {
