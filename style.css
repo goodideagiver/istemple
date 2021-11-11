@@ -53,9 +53,18 @@ main {
     margin-top: 5vh;
 }
 
-.identity {
-    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
-    color: white;
+body {
+    background: rgb(69,170,180);
+    background: linear-gradient(45deg, rgba(69,170,180,1) 0%, rgba(69,170,180,1) 16%, rgba(3,141,178,1) 16%, rgba(3,141,178,1) 33%, rgba(32,100,145,1) 33%, rgba(32,100,145,1) 49%, rgba(249,99,124,1) 49%, rgba(249,99,124,1) 65%, rgba(254,122,102,1) 65%, rgba(254,122,102,1) 81%, rgba(251,180,92,1) 81%); 
+
+    background-size: 300%;
+    animation: bg-scroll 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bg-scroll {
+    0% {background-position: 100% 100%;background-size: 300%;}
+    100% {background-position: 0% 0%;background-size: 100%;}
 }
 
 .grid-wrapper {
@@ -81,10 +90,16 @@ main {
 .frame-style {
     box-shadow: var(--standard-shadow);
     /* border: 1px black solid; */
-    background-color: white;
     border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
 }
 
+@supports (backdrop-filter: blur(20px)) {
+    .frame-style {
+        backdrop-filter: blur(50px);
+        background-color:rgba(255, 255, 255, 0.336);
+    }
+}
 
 .promotion {
     background-color: red;
@@ -251,6 +266,8 @@ main {
 
     body {
         padding: var(--standard-gap);
+        animation: none;
+        background-size: 100%;
     }
 
     #contact ul {
