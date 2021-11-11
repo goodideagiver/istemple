@@ -57,6 +57,9 @@ body {
     /* background: rgb(69,170,180);
     background: linear-gradient(45deg, rgba(69,170,180,1) 0%, rgba(69,170,180,1) 16%, rgba(3,141,178,1) 16%, rgba(3,141,178,1) 33%, rgba(32,100,145,1) 33%, rgba(32,100,145,1) 49%, rgba(249,99,124,1) 49%, rgba(249,99,124,1) 65%, rgba(254,122,102,1) 65%, rgba(254,122,102,1) 81%, rgba(251,180,92,1) 81%);  */
 
+    background: rgb(130,238,253);
+    background: linear-gradient(225deg, rgba(130,238,253,1) 0%, rgba(130,238,253,1) 16%, rgba(107,209,223,1) 16%, rgba(107,209,223,1) 33%, rgba(97,188,200,1) 33%, rgba(97,188,200,1) 49%, rgba(70,152,163,1) 49%, rgba(70,152,163,1) 65%, rgba(47,118,128,1) 65%, rgba(47,118,128,1) 81%, rgba(38,97,106,1) 81%); 
+
     background-size: 300%;
     animation: bg-scroll 5s;
     animation-fill-mode: forwards;
@@ -98,6 +101,12 @@ body {
     .frame-style {
         backdrop-filter: blur(50px);
         background-color:rgba(255, 255, 255, 0.336);
+    }
+}
+
+@supports (not (gap:20px)) {
+    #contact a {
+        margin: 10px 0;
     }
 }
 
