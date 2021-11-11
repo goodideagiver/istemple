@@ -245,6 +245,10 @@ main {
         gap: 1vh;
     }
 
+    header {
+        margin: 0;
+    }
+
     body {
         padding: var(--standard-gap);
     }
