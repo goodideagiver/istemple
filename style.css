@@ -202,6 +202,16 @@ body {
     border-bottom: black 1px solid;
 }
 
+#offer ol {
+    margin: auto;
+    width: fit-content;
+}
+
+#offer li {
+    margin: auto;
+    width: fit-content;
+}
+
 .mobile-buttons > a {
     text-decoration: none;
     border: 1px solid black;
@@ -254,6 +264,10 @@ body {
 
 
 @media (max-width:800px) {
+    * {
+        font-size: 18px;
+    }
+
     .motto {
         display: none;
     }   
