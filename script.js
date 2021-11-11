@@ -1,4 +1,3 @@
-document.onload = loadStorage();
 
 function loadStorage() {
     if ((window.localStorage.getItem('topMessage'))==1) {
@@ -12,3 +11,5 @@ function disableMessage() {
     window.localStorage.setItem('topMessage','1');
     loadStorage();
 }
+
+loadStorage();
