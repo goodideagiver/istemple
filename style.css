@@ -231,6 +231,21 @@ body {
     margin-bottom: 2vh;
 }
 
+#directions P {
+    padding: 5% 0;
+    text-align: center;
+}
+
+#directions a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#directions p:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width:800px) {
     .motto {
         display: none;
