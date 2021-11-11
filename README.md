@@ -1,2 +1,2 @@
 # istemple
-goodideagiver.github.io/istemple
+https://goodideagiver.github.io/istemple/
