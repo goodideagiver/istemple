@@ -151,7 +151,7 @@ main {
 
 #contact a {
     border: 1px solid black;
-    padding: 10%;
+    padding: 10% 0;
     width: 100%;
     text-decoration: none;
     color: black;
@@ -177,7 +177,7 @@ main {
     border: 1px solid black;
     width: 100%;
     margin: 2% 0;
-    padding: 3vh;
+    padding: 3vh 0;
     border-radius: 10px;
     color: black;
     font-weight: bold;
