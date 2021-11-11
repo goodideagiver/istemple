@@ -139,6 +139,7 @@ body {
     grid-template-columns: repeat(2,1fr);
     grid-auto-rows: 1fr;
     gap: 2vh;
+    margin-top: 5%;
 }
 
 .examples img {
@@ -205,9 +206,10 @@ body {
 #offer ol {
     margin: auto;
     width: fit-content;
+    margin-bottom: 5%;
 }
 
-#offer li {
+#offer li,#offer h3 {
     margin: auto;
     width: fit-content;
 }
