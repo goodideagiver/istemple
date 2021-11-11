@@ -294,6 +294,7 @@ nav:hover {
 
 .nav-wrapper {
     position: absolute;
+    top: 0;
     left: -200px;
 }
 
