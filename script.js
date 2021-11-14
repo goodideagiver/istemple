@@ -12,4 +12,4 @@ function disableMessage() {
     loadStorage();
 }
 
-loadStorage();
+setTimeout('$("#intro").hide()',5000);
