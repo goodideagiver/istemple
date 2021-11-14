@@ -7,14 +7,14 @@
     height: 100vh;
     width: 100vw;
     z-index: 2;
-    animation: hide-intro 1s ease-in-out 3s forwards, 5s bg-move infinite;
+    animation: hide-intro .8s ease-in-out 2s forwards, 5s bg-move infinite;
     flex-direction: column;
 }
 
 @keyframes hide-intro {
     0% {transform: scale(1);border-radius: 0%;}
     20% {transform: scale(0.8);border-radius: 25px;}
-    100% {transform: translate(0,100%) scale(0.1);}
+    100% {transform: translate(0,100%) scale(0.1);display: none;}
 }
 
 @keyframes bg-move {
@@ -23,12 +23,26 @@
 }
 
 .intro-anim h4 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
 }
 
 .intro-anim p {
-    font-size: 1.4rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.intro-anim i {
+    font-size: 100px;
+    animation: infinite 1s ease-in-out stamp 0.1s;
+    color: white;
+}
+
+@keyframes stamp {
+    0% {transform: translate(0,0);}
+    20% {transform: translate(0,0);}
+    50% {transform: translate(0,10%);}
+    0% {transform: translate(0,0);}
 }
 
 .intro-bg {
