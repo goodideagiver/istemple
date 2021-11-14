@@ -1,0 +1,27 @@
+.intro-anim {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    animation: hide-intro 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    background-color: rgba(130,238,253,1) ;
+    flex-direction: column;
+    
+}
+
+@keyframes hide-intro {
+    0% {transform: scale(1);}
+    20% {transform: scale(0.8);}
+    100% {transform: translate(0,100%) scale(0.1);}
+}
+
+.intro-anim h4 {
+    font-size: 3rem;
+    color: white;
+}

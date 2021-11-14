@@ -362,9 +362,12 @@ nav a:hover {
     }
 
     body {
-        padding: var(--standard-gap);
         animation: none;
         background-size: 100%;
+    }
+    
+    header,main {
+        padding: var(--standard-gap);
     }
 
     #contact ul {
