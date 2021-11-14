@@ -118,7 +118,6 @@ body {
     text-align: center;
     width: 100%;
     padding: 0.5%;
-    position: absolute;
     left: 0;
     top: 0;
 }
@@ -221,19 +220,27 @@ body {
 }
 
 #offer ol {
-    margin: auto;
     margin-bottom: 5%;
+    margin-top: 1%;
     width: fit-content;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 #offer li,#offer h3 {
-    margin: auto;
     width: fit-content;
 }
 
 #offer li {
-    text-align: left;
-    width: 100%;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.172);
 }
 
 .mobile-buttons > a {
