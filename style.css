@@ -60,9 +60,9 @@ body {
     background: rgb(130,238,253);
     background: linear-gradient(225deg, rgba(130,238,253,1) 0%, rgba(130,238,253,1) 16%, rgba(107,209,223,1) 16%, rgba(107,209,223,1) 33%, rgba(97,188,200,1) 33%, rgba(97,188,200,1) 49%, rgba(70,152,163,1) 49%, rgba(70,152,163,1) 65%, rgba(47,118,128,1) 65%, rgba(47,118,128,1) 81%, rgba(38,97,106,1) 81%); 
 
-    background-size: 300%;
-    animation: bg-scroll 5s;
-    animation-fill-mode: forwards;
+    background-size: 100%;
+    /* animation: bg-scroll 5s;
+    animation-fill-mode: forwards; */
 }
 
 @keyframes bg-scroll {
@@ -114,12 +114,14 @@ body {
 .promotion {
     background-color: red;
     color: rgb(0, 0, 0);
-    font-weight: bold;
     text-align: center;
     width: 100%;
     padding: 0.5%;
     left: 0;
     top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .promotion button {
@@ -127,6 +129,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: black;
 }
 
 .mobile-buttons {
@@ -327,6 +330,10 @@ nav a:hover {
     background-color: lightgray;
 }
 
+.disable-scroll {
+    overflow: hidden;
+}
+
 @media (max-width:1200px) {
     nav {
         display: none;
@@ -380,5 +387,9 @@ nav a:hover {
     #contact ul {
         flex-direction: column;
         gap: 30px;
+    }
+
+    .promotion p{
+        font-size: 0.8rem;
     }
 }
