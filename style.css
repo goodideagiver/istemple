@@ -388,6 +388,18 @@ nav a:hover {
 }
 
 @media (max-width:1200px) {
+    .t-box {
+        padding-top: 8vh;
+    }
+
+    section {
+        margin: 12vh 0;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
     nav {
         display: none;
     }
