@@ -4,6 +4,7 @@
     --standard-gap: 5%;
 
     --brand-color:rgb(130,238,253);
+    --small-shadow:rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
 * {
@@ -44,7 +45,7 @@ header , main {
 }
 
 section {
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
 }
 
 header {
@@ -99,13 +100,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-@supports (backdrop-filter: blur(20px)) {
-    .frame-style {
-        backdrop-filter: blur(50px);
-        background-color:rgba(255, 255, 255, 0.336);
-    }
-}
-
 @supports (not (gap:20px)) {
     #contact a {
         margin: 20px 0;
@@ -138,6 +132,10 @@ body {
     display: none;
 }
 
+.identity span {
+    max-width: 200px;
+}
+
 .motto {
     display: flex;
     position: relative;
@@ -159,16 +157,32 @@ body {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
+
+
 .motto span {
     color: var(--brand-color);
 }
 
 .t-box {
     padding: 5vh;
+    position: relative;
+    padding-top: 6vh;
 }
 
 .t-box h2 {
     margin-bottom: 2vh;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -25px;
+    background-color: rgb(221, 221, 221);
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
 .t-box h3 {
@@ -200,14 +214,14 @@ body {
     border-radius: 10px;
 }
 
-#contact ul {
+#contact ul,#footer ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     flex-direction: row;
 }
 
-#contact li {
+#contact li,#footer li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +229,7 @@ body {
     flex-basis: 20%;
 }
 
-#contact a {
+#contact a,#footer a {
     border: 1px solid black;
     padding: 10% 0;
     width: 100%;
@@ -225,24 +239,39 @@ body {
     border-radius: 10px;
 }
 
-#contact a:hover {
+#contact a:hover,#footer a:hover {
     background-color: lightgray;
     text-decoration: underline;
 }
 
-#contact .fas {
+#contact .fas,#footer .fas {
     font-size: 30px;
 }
 
-#contact p {
+#contact p,#footer p {
     text-align: center;
 }
 
-#contact li > div {
+#contact li > div,#footer li > div {
     display: flex;
     justify-content: space-between;
     width: 100%;
     border-bottom: black 1px solid;
+}
+
+#footer {
+    margin: 0;
+    background: rgb(255, 255, 255);
+}
+
+#footer .t-box {
+    border-radius: 0 !important;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#footer li {
+    flex-basis: 10%;
 }
 
 #offer ol {
