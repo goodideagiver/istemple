@@ -45,6 +45,7 @@ header , main {
 }
 
 section {
+    margin-top: 8vh;
     margin-bottom: 8vh;
 }
 
@@ -443,5 +444,9 @@ nav a:hover {
 
     .promotion p{
         font-size: 0.8rem;
+    }
+
+    footer {
+        display: none;
     }
 }
