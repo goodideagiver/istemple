@@ -392,6 +392,10 @@ nav a:hover {
         padding-top: 8vh;
     }
 
+    .frame-style {
+        box-shadow: none;
+    }
+
     section {
         margin: 12vh 0;
     }
