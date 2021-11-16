@@ -47,7 +47,7 @@ header , main {
 }
 
 section {
-    margin-top: 8vh;
+    margin-top: max(8vh,100px);
     margin-bottom: 8vh;
 }
 
@@ -168,7 +168,7 @@ body {
 .t-box {
     padding: 5vh;
     position: relative;
-    padding-top: 6vh;
+    padding-top: max(6vh,70px);
 }
 
 .t-box h2 {
@@ -185,6 +185,7 @@ body {
     padding: 15px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    
 }
 
 .t-box h3 {
@@ -415,9 +416,9 @@ nav a:hover {
 .of-g-item i {
     font-size: 70px;
     text-align: center;
-    height: 100%;
     display: block;
     min-width: 80px;
+    height: 100%;
 }
 
 .of-g-inside {
@@ -427,6 +428,12 @@ nav a:hover {
     align-items: center;
     height: 100%;
     gap: 5%;
+}
+
+.of-g-inside li {
+    text-align: left !important;
+    box-shadow: none !important;
+    margin-left: 15px;
 }
 
 .of-g-inside h3 {
@@ -513,5 +520,18 @@ nav a:hover {
 
     footer {
         display: none;
+    }
+
+    .of-g-item {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .of-g-item i {
+        font-size: 70px;
+        text-align: center;
+        display: block;
+        min-width: 80px;
+        height: auto;
     }
 }
