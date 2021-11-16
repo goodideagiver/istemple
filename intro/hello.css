@@ -30,6 +30,8 @@
 .intro-anim p {
     font-size: 1rem;
     color: white;
+    width: 60%;
+    text-align: center;
 }
 
 .intro-anim i {
