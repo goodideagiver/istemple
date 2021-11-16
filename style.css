@@ -448,14 +448,13 @@ nav a:hover {
 }
 
 @media (max-width:1200px) {
-    .t-box {
-        padding-top: 8vh;
-    }
 
-    section {
-        margin: 12vh 0;
+    .t-box,.grid-item {
+        --mobile-padding:5%;
+        padding-left: var(--mobile-padding);
+        padding-right: var(--mobile-padding);
     }
-
+    
     section h2 {
         font-size: 1.2rem;
     }
@@ -537,5 +536,9 @@ nav a:hover {
         display: block;
         min-width: 80px;
         height: auto;
+    }
+
+    .frame-style {
+        box-shadow: var(--small-shadow);
     }
 }
