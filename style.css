@@ -438,7 +438,7 @@ nav a:hover {
     gap: 5%;
     min-width: 250px;
     border-radius: 10px;
-    box-shadow: var(--small-shadow);
+    /* box-shadow: var(--small-shadow); */
     box-shadow: var(--shadow-elevation-high);
 }
 
