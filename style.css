@@ -332,6 +332,11 @@ body {
     margin-bottom: max(5%,50px);
 }
 
+.offer-articles article > h3 {
+    font-size: 2rem;
+    margin: max(10%,20px) 0 max(2%,20px);
+}
+
 .side-by-side {
     display: flex;
     width: 100%;
@@ -352,7 +357,7 @@ body {
 }
 
 .side-by-side div > h3 {
-    font-size: 1.9rem;
+    font-size: 2.9rem;
     color: var(--brand-color-darker);
 }
 
@@ -364,6 +369,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .three-elements{
