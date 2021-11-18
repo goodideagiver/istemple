@@ -574,7 +574,7 @@ nav a {
     }
     
     .footer-mobile ul {
-        padding: 5% 0;
+        padding: 20% 0;
         list-style: none;
         display: flex;
         width: 100%;
@@ -582,6 +582,19 @@ nav a {
         justify-content: space-evenly;
         flex-wrap: wrap;
         background-color: white;
+    }
+
+    .footer-mobile li {
+        margin-bottom: 30px;
+    }
+
+    .footer-mobile a {
+        background-color: var(--brand-color-darker);
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        box-shadow: var(--shadow-elevation-low);
     }
 
     .of-g-item {
