@@ -362,10 +362,13 @@ body {
 .three-elements div {
     text-align: center;
     flex-basis: 30%;
-    background-color: lightgray;
+    background-color: var(--brand-color-darker);
     border-radius: 10px;
     padding: 5%;
     box-shadow: var(--shadow-elevation-low);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
 }
 
 .mobile-buttons > a {
