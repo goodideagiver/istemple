@@ -330,9 +330,14 @@ body {
 }
 
 /*Offer content elements*/
+.offer-articles > article {
+    margin-bottom: max(5%,50px);
+}
+
 .side-by-side {
     display: flex;
     width: 100%;
+    gap: 5%;
 }
 
 .side-by-side div {
