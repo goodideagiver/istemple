@@ -488,6 +488,10 @@ nav a {
     color: var(--brand-color-darker) !important;
 }
 
+.footer-mobile {
+    display: none;
+}
+
 @media (max-width:1200px) {
 
     .t-box,.grid-item {
@@ -559,8 +563,25 @@ nav a {
         font-size: 0.8rem;
     }
 
-    footer {
+    #footer {
         display: none;
+    }
+
+    .footer-mobile {
+        display: block;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .footer-mobile ul {
+        padding: 5% 0;
+        list-style: none;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: white;
     }
 
     .of-g-item {
