@@ -122,7 +122,7 @@ body {
 }
 
 .frame-style {
-    box-shadow: var(--standard-shadow);
+    /* box-shadow: var(--standard-shadow); */
     /* border: 1px black solid; */
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.637);;
@@ -182,7 +182,7 @@ body {
     padding: 20px;
     border-radius: 50%;
     /* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
-    box-shadow: var(--shadow-elevation-low);
+    /* box-shadow: var(--shadow-elevation-low); */
 }
 
 .motto span {
@@ -204,13 +204,11 @@ body {
     right: 0;
     text-align: center;
     top: -25px;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
     width: 50%;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-    box-shadow: var(--shadow-elevation-medium);
-    
+    /* box-shadow: var(--shadow-elevation-medium); */
 }
 
 .t-box h3 {
@@ -266,7 +264,7 @@ body {
     color: white;
     text-align: center;
     border-radius: 10px;
-    box-shadow: var(--shadow-elevation-medium);
+    /* box-shadow: var(--shadow-elevation-medium); */
     transition: all 0.2s;
 }
 
@@ -449,12 +447,12 @@ body {
 }
 
 nav {
-    position: fixed;
-    width: auto;
-    height: auto;
     display: flex;
     flex-direction: column;
+    height: auto;
     padding: 1%;
+    position: fixed;
+    width: auto;
 }
 
 .nav-wrapper {
@@ -464,16 +462,16 @@ nav {
 }
 
 nav a {
-    padding: 10%;
-    margin: 10px 0;
-    text-align: center;
-    width: 80%;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
     background-color: lightgray;
+    border-radius: 10px;
+    color: black;
     font-weight: bold;
+    margin: 10px 0;
+    padding: 10%;
+    text-align: center;
+    text-decoration: none;
     transition: transform 0.1s ease-out;
+    width: 80%;
 }
 
 .disable-scroll {
@@ -491,19 +489,19 @@ nav a {
 }
 
 .of-g-item {
+    /* box-shadow: var(--small-shadow); */
+    align-items: center;
+    background-color: var(--brand-color-darker);
+    border-radius: 10px;
+    /* box-shadow: var(--shadow-elevation-high); */
     display: flex;
     flex-direction: row;
-    text-align: left;
-    background-color: var(--brand-color-darker);
-    width: 41%;
-    padding: 3%;
-    align-items: center;
-    margin-bottom: 5%;
     gap: 5%;
+    margin-bottom: 5%;
     min-width: 250px;
-    border-radius: 10px;
-    /* box-shadow: var(--small-shadow); */
-    box-shadow: var(--shadow-elevation-high);
+    padding: 3%;
+    text-align: left;
+    width: 41%;
 }
 
 .of-g-item i {
@@ -542,14 +540,14 @@ nav a {
 
 .clickable {
     background-color: white !important;
-    color: black !important;
-    font-weight: bold !important;
+    border: none !important;
     box-shadow: var(--shadow-elevation-low) !important;
+    color: black !important;
     display: block !important;
+    font-weight: bold !important;
     text-align: center !important;
     text-decoration: none !important;
     transition: box-shadow 0.3s,color 0.2s;
-    border: none !important;
 }
 
 .clickable:hover {
@@ -565,9 +563,9 @@ nav a {
 
     .t-box,.grid-item {
         --mobile-padding:5%;
+        background-color: rgba(255, 255, 255, 0.637);
         padding-left: var(--mobile-padding);
         padding-right: var(--mobile-padding);
-        background-color: rgba(255, 255, 255, 0.637);
     }
     
     section h2 {
@@ -676,14 +674,14 @@ nav a {
     }
     
     .footer-mobile ul {
-        padding: 20% 0;
-        list-style: none;
-        display: flex;
-        width: 100%;
         align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
         background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 20% 0;
+        width: 100%;
     }
 
     .footer-mobile li {
@@ -692,11 +690,11 @@ nav a {
 
     .footer-mobile a {
         background-color: var(--brand-color-darker);
-        color: white;
-        padding: 10px;
         border-radius: 10px;
-        font-weight: bold;
         box-shadow: var(--shadow-elevation-low);
+        color: white;
+        font-weight: bold;
+        padding: 10px;
     }
 
     .of-g-item {
@@ -709,11 +707,11 @@ nav a {
     }
 
     .of-g-item i {
-        font-size: 70px;
-        text-align: center;
         display: block;
-        min-width: 80px;
+        font-size: 70px;
         height: auto;
+        min-width: 80px;
+        text-align: center;
     }
 
     .frame-style {
