@@ -632,6 +632,39 @@ nav a {
         font-size: 0.8rem;
     }
 
+    .offer-articles article > h3 {
+        font-size: 1.4rem;
+    }
+
+    .side-by-side a {
+        font-size: 1rem;
+    }
+
+    .side-by-side p {
+        font-size: 1rem;
+        margin-bottom: 10%;
+    }
+
+    .side-by-side {
+        flex-direction: column;
+        border-bottom: 3px var(--brand-color-darker) solid;
+    }
+
+    .side-by-side div {
+        margin-bottom: 5%;
+    }
+
+    .three-elements {
+        flex-direction: column;
+    }
+
+    .three-elements div {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-bottom: max(10px,5%);
+        flex-direction: row;
+    }
+
     #footer {
         display: none;
     }
