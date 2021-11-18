@@ -267,7 +267,7 @@ body {
     text-align: center;
     border-radius: 10px;
     box-shadow: var(--shadow-elevation-medium);
-    
+    transition: all 0.2s;
 }
 
 #contact a:hover,#footer a:hover {
@@ -407,11 +407,6 @@ nav a {
     transition: transform 0.1s ease-out;
 }
 
-nav a:hover {
-    background-color: rgb(177, 177, 177);
-    transform: scale(1.05);
-}
-
 .disable-scroll {
     overflow: hidden;
 }
@@ -484,14 +479,13 @@ nav a:hover {
     display: block !important;
     text-align: center !important;
     text-decoration: none !important;
-    transition: transform .2s ease-out, box-shadow 0.2s, background-color 0.1s;
+    transition: box-shadow 0.3s,color 0.2s;
     border: none !important;
 }
 
 .clickable:hover {
-    transform: scale(1.05) !important;
     box-shadow: var(--shadow-elevation-medium) !important;
-    background-color: lightgray !important;
+    color: var(--brand-color-darker) !important;
 }
 
 @media (max-width:1200px) {
