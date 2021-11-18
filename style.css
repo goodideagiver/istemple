@@ -67,7 +67,7 @@ html , body {
 }
 
 header , main {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -125,7 +125,7 @@ body {
     /* box-shadow: var(--standard-shadow); */
     /* border: 1px black solid; */
     border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.637);;
+    background-color: rgba(255, 255, 255, 0.637);
 }
 
 @supports (not (gap:20px)) {
@@ -557,6 +557,31 @@ nav a {
 
 .footer-mobile {
     display: none;
+}
+
+@media (max-width:1600px) {
+    nav {
+        flex-direction: row;
+        width: 100%;
+        padding: 1% 0;
+        margin: auto;
+        justify-content: center;
+        gap: 2%;
+        border-radius: 0 !important;
+    }
+
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+
+    nav a {
+        padding: 1% 5%;
+        margin: 0;
+        width: fit-content;
+    }
 }
 
 @media (max-width:1200px) {
