@@ -355,6 +355,7 @@ body {
 
 .side-by-side div > h3 {
     font-size: 1.9rem;
+    color: var(--brand-color-darker);
 }
 
 .side-by-side div > p {
@@ -371,6 +372,8 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 5%;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .three-elements div {
@@ -380,13 +383,15 @@ body {
     color: white;
     display: flex;
     flex-basis: 30%;
-    flex-wrap: wrap;
     font-size: 1.5rem;
     font-weight: bold;
     gap: 5%;
     justify-content: center;
     padding: 5% 0;
     text-align: center;
+    min-width: 137px;
+    min-height: 72px;
+    flex-direction: column;
 }
 
 .three-elements div > i {
