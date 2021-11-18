@@ -452,6 +452,10 @@ body {
     text-decoration: underline;
 }
 
+#navbar {
+    transition: top 0.2s ease-out;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -565,7 +569,7 @@ nav a {
     display: none;
 }
 
-@media (max-width:1600px) {
+@media (max-width:1600px) and (min-width:1200px) {
     nav {
         flex-direction: row;
         width: 100%;
@@ -576,11 +580,15 @@ nav a {
         border-radius: 0 !important;
     }
 
+    header {
+        margin-top: max(6vh,120px);
+    }
+
     .nav-wrapper {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 5;
+        z-index: 1;
     }
 
     nav a {
