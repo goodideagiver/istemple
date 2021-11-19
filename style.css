@@ -52,6 +52,10 @@ h2 {
     text-align: center;
 }
 
+section {
+    scroll-margin-top: 50px;
+}
+
 q {
     font-size: 1.2rem;
     font-style: italic;
