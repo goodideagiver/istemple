@@ -577,7 +577,7 @@ nav a {
     display: none;
 }
 
-@media (max-width:1600px) and (min-width:1200px) {
+@media (max-width:1600px) and (min-width:800px) {
     nav {
         flex-direction: row;
         width: 100%;
@@ -610,7 +610,7 @@ nav a {
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:800px) {
 
     .t-box,.grid-item {
         --mobile-padding:5%;
