@@ -587,6 +587,10 @@ nav a {
         margin-top: max(6vh,120px);
     }
 
+    section {
+        scroll-margin-top: 120px;
+    }
+
     .nav-wrapper {
         position: fixed;
         top: 0;
