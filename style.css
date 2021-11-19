@@ -628,7 +628,18 @@ nav a {
     .arrow-up-mobile i {
         font-size: max(min(12vh,25vw),70px);
         color: var(--brand-color-darker);
-        text-shadow: 3px 0 0 white, -3px 0 0 white, 0 3px 0 white,0 -3px 0 white,0 0 15px rgba(0, 0, 0, 0.281);
+        text-shadow: 3px 0 0 white, -3px 0 0 white, 0 3px 0 white,0 -3px 0 white,0 0 15px rgba(0, 0, 0, 0.281);+
+        position: relative;
+    }
+
+    .arrow-up-mobile a {
+        left: -15px;
+        top: -15px;
+        display: block;
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
     }
 
     .t-box,.grid-item {
