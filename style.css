@@ -294,6 +294,7 @@ body {
 #footer {
     margin: 0;
     background: rgb(255, 255, 255);
+    display: none;
 }
 
 #footer .t-box {
