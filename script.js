@@ -21,7 +21,8 @@ function loadStorage() {
 loadStorage();
 navShift();
 
-window.onscroll = navShift
+window.onresize = navShift;
+window.onscroll = navShift;
 
 
 
