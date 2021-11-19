@@ -16,7 +16,6 @@ function loadStorage() {
     } else {
         nav.style.top = "0";
     }
-    console.log(height);
 }
 
 loadStorage();
