@@ -22,9 +22,21 @@ loadStorage();
 navShift();
 
 window.onresize = navShift;
-window.onscroll = navShift;
+window.onscroll = function() {
+    navShift();
+    mobileArrow();
+}
 
-
+function mobileArrow() {
+    var arrow = document.getElementById('mobarr');
+    if (window.scrollY>200) {
+        arrow.style.opacity = "100%";
+        arrow.style.transform = "translate(0,0)";
+    } else {
+        arrow.style.opacity = "0";
+        arrow.style.transform = "translate(0,150%)";
+    }
+}
 
 
 function disableMessage() {

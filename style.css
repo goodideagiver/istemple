@@ -576,6 +576,10 @@ nav a {
     display: none;
 }
 
+.arrow-up-mobile {
+    display: none;
+}
+
 @media (max-width:1600px) and (min-width:800px) {
     nav {
         flex-direction: row;
@@ -610,6 +614,22 @@ nav a {
 }
 
 @media (max-width:800px) {
+    .arrow-up-mobile {
+        display: block;
+        position: fixed;
+        bottom: 5%;
+        left: 8%;
+        z-index: 2;
+        transition: opacity .2s ease-out 0.1s,transform .2s;
+        transform: translate(0,150%);
+        opacity: 0;
+    }
+
+    .arrow-up-mobile i {
+        font-size: max(min(12vh,25vw),70px);
+        color: var(--brand-color-darker);
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.226);
+    }
 
     .t-box,.grid-item {
         --mobile-padding:5%;
