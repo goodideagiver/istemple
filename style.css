@@ -667,6 +667,7 @@ nav a {
     #contact ul {
         flex-direction: column;
         gap: 30px;
+        margin-top: 15px;
     }
 
     .promotion p{
@@ -674,6 +675,9 @@ nav a {
     }
 
     .offer-articles > article {
+        padding-bottom: 10px !important;
+        border-bottom: var(--brand-color-darker) 2px solid;
+        margin: 0;
         margin-bottom: 10px;
     }
 
@@ -683,19 +687,29 @@ nav a {
 
     .side-by-side a {
         font-size: 1rem;
+        margin: 10px 0;
     }
 
     .side-by-side p {
         font-size: 1rem;
-        margin-bottom: 10%;
     }
 
     .side-by-side {
         flex-direction: column;
+        margin-bottom: 30px;
     }
 
-    .side-by-side div {
-        margin-bottom: 5%;
+    .side-by-side :is(div,p) {
+        margin-bottom: 2%;
+    }
+
+    .order5 {
+        order: 5;
+    }
+
+    .side-by-side div h3 {
+        text-align: center;
+        margin: auto;
     }
 
     .three-elements {
@@ -749,12 +763,16 @@ nav a {
     }
 
     .of-g-inside p {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .of-g-inside h3 {
+        font-size: 1.2rem;
     }
 
     .of-g-item i {
         display: block;
-        font-size: 70px;
+        font-size: 55px;
         height: auto;
         min-width: 80px;
         text-align: center;
