@@ -628,7 +628,7 @@ nav a {
     .arrow-up-mobile i {
         font-size: max(min(12vh,25vw),70px);
         color: var(--brand-color-darker);
-        text-shadow: 0 0 15px rgba(0, 0, 0, 0.226);
+        text-shadow: 3px 0 0 white, -3px 0 0 white, 0 3px 0 white,0 -3px 0 white,0 0 15px rgba(0, 0, 0, 0.281);
     }
 
     .t-box,.grid-item {
