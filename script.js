@@ -1,6 +1,5 @@
 var nav = document.getElementById('navbar');
 var promo = document.getElementById('promotion');
-let height = promo.offsetHeight;
 
 function loadStorage() {
     if ((window.localStorage.getItem('topMessage'))==1) {
@@ -11,8 +10,9 @@ function loadStorage() {
 }
 
  function navShift() {
+    let height = promo.offsetHeight;
     if ((window.scrollY==0) && ((window.localStorage.getItem('topMessage'))!=1) && (window.innerWidth<1600)) {
-        document.getElementById('navbar').style.top = height + 7 + "px";
+        document.getElementById('navbar').style.top = height + "px";
     } else {
         nav.style.top = "0";
     }
