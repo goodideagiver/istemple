@@ -6,7 +6,7 @@
     --standard-gap: 5%;
 
     --brand-color:rgb(130,238,253);
-    --brand-color-darker:rgba(97,188,200,1);
+    --brand-color-darker:rgb(79, 153, 163);
 
     --small-shadow:rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 
@@ -606,6 +606,10 @@ nav a {
         padding-left: var(--mobile-padding);
         padding-right: var(--mobile-padding);
     }
+
+    .t-box {
+        padding-top: 40px;
+    }
     
     section h2 {
         font-size: 1.2rem;
@@ -669,6 +673,10 @@ nav a {
         font-size: 0.8rem;
     }
 
+    .offer-articles > article {
+        margin-bottom: 10px;
+    }
+
     .offer-articles article > h3 {
         font-size: 1.4rem;
     }
@@ -684,7 +692,6 @@ nav a {
 
     .side-by-side {
         flex-direction: column;
-        border-bottom: 3px var(--brand-color-darker) solid;
     }
 
     .side-by-side div {
