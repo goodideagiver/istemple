@@ -620,6 +620,10 @@ nav a {
     .t-box {
         padding-top: 40px;
     }
+
+    .t-box h2 {
+        top: -29px;
+    }
     
     section h2 {
         font-size: 1.2rem;
