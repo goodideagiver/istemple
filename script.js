@@ -11,7 +11,7 @@ function loadStorage() {
 }
 
  function navShift() {
-    if ((window.scrollY==0) && ((window.localStorage.getItem('topMessage'))!=1)) {
+    if ((window.scrollY==0) && ((window.localStorage.getItem('topMessage'))!=1) && (window.innerWidth<1600)) {
         document.getElementById('navbar').style.top = height + 7 + "px";
     } else {
         nav.style.top = "0";
