@@ -456,7 +456,7 @@ body {
 }
 
 #navbar {
-    transition: top 0.2s cubic-bezier(.21,.04,0,.98);
+    transition: top 0.1s cubic-bezier(.21,.04,0,.98);
 }
 
 nav {
