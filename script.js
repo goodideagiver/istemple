@@ -3,16 +3,16 @@ var promo = document.getElementById('promotion');
 
 function loadStorage() {
     if ((window.localStorage.getItem('topMessage'))==1) {
-        document.getElementById('promotion').style.display = "none";
+        promo.style.display = "none";
     } else {
-        document.getElementById('promotion').style.display = "block";
+        promo.style.display = "block";
     }
 }
 
  function navShift() {
     let height = promo.offsetHeight;
     if ((window.scrollY==0) && ((window.localStorage.getItem('topMessage'))!=1) && (window.innerWidth<1600)) {
-        document.getElementById('navbar').style.top = height + "px";
+        nav.style.top = height + "px";
     } else {
         nav.style.top = "0";
     }
@@ -37,7 +37,6 @@ function mobileArrow() {
         arrow.style.transform = "translate(0,150%)";
     }
 }
-
 
 function disableMessage() {
     window.localStorage.setItem('topMessage','1');
