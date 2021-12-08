@@ -162,6 +162,7 @@ body {
 
 .mobile-buttons {
     display: none;
+    scroll-margin: 10vh;
 }
 
 .identity span {
