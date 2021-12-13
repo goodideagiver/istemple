@@ -44,4 +44,4 @@ function disableMessage() {
     navShift();
 }
 
-setTimeout('$("#intro").hide()',0);
+setTimeout('$("#intro").hide()',2500);
